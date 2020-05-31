@@ -1,0 +1,6 @@
+mpuHelp KEYWORD1
+read_mpu_6050_data  KEYWORD2
+setup_mpu_6050_registers    KEYWORD2
+getACC_X    KEYWORD2
+getACC_Y    KEYWORD2
+getACC_Z    KEYWORD2
