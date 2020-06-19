@@ -18,7 +18,21 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
     <img id="whoami" src="img/imagens-palestra/2.png" style="height:300px, ">
 </a>
 
-<p>Minha jornada se iniciou depois que entrei na Universidade, no curso de Engenharia da Computação. Já tinha um background técnico, com um pouco de prática e robótica, porém nada extraordinário e diferente do que se encontra nos tutoriais básicos da web. </p>
+<p>
+    Minha jornada se iniciou depois que entrei na Universidade, no curso de Engenharia da Computação. Já tinha um background técnico, com um pouco de prática em robótica e programação, porém nada extraordinário e diferente do que se encontra nos tutoriais básicos da web. Com uma ideia de que iria trabalhar bastante com robótica, programação, participar de competições e desenvolver projetos, cheguei muito empolgado e com vontade de aprender. O problema é que não existiam grupos de estudo, laboratórios abertos para ensinar e muitas pessoas interessadas em ensinar. Além disso, as disciplinas exigiam esse conhecimento, para criação de projetos e pôr em prática diversos conteúdos do curso que estão envolvidos com essas práticas.
+</p>
+
+<p>
+    Por isso depois que surgiu uma oportunidade de iniciar um Grupo de estudos em Robótica junto ao IEEE, entrei para o time junto com alguns amigos e passamos a ser os responsáveis por criar essa cultura ali dentro. Os anos se passaram e hoje temos diversas pessoas trabalhando no projeto juntos, como uma comunidade, que colabora com todos espalhando conhecimento e aprendendo muito no processo.
+</p>
+
+<p>
+    Além desse projeto, também sou responsável por uma loja de componentes eletrônicos, o <a href="becodaeletronica.com">Beco da Eletrônica</a>, que funciona localmente no Centro de Informática da UFPB, oferecendo materiais para que todos tenham acesso e possam realizar diversos projetos. 
+</p>
+
+> ## Contato
+> - Email: mateus.antonio@eng.ci.ufpb.br
+> - Instagram: @matteus_antonio
 
 <img id="introd" src="img/imagens-palestra/4.png" style="height:300px, ">
 
@@ -28,9 +42,11 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
 
 <img id="expectativa" src="img/imagens-palestra/5.png" style="height:300px, ">
 
-<p>Sem querer criar muitas expectativas, </p>
+
 
 <img id="realidade" src="img/imagens-palestra/6.png" style="height:300px, ">
+
+<p>Sem querer criar muitas expectativas, essa apresentação não vai preparar ninguém pra fazer o próximo homem de ferro. A abordagem aqui será um pouco superficial, mas será o suficiente pra despertar muita curiosidade.</p>
 
 # Objetivo <a id="objetivo"></a>
 
