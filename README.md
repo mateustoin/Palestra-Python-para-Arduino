@@ -11,9 +11,8 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
 4. [O que preciso saber sobre Python para conectar no Arduino?](#sobre-python)
 5. [Códigos, Aplicações e Utilitários](#aplicacao)
 
-# Introdução <a id="introducao"></a>
+<img id="introd" src="img/imagens-palestra/4.png" style="height:300px, ">
 
-<img id="introd" src="img/python-para-arduino.png" style="height:300px, ">
 
 # Objetivo <a id="objetivo"></a>
 
