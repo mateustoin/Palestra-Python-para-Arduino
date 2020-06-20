@@ -134,7 +134,6 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
     Os códigos foram exibidos e explicados para mostrar como é simples a cadeia de comandos que você pode fazer no python para realizar uma tarefa. Se com drones é possível ter um controle tão simples, quem dirá funcionalidades que podemos implementar no python, como reconhecimento de voz, entre outros. Como dito anteriormente, algumas coisas são mais simples do que parece e é isso que iremos explorar!
 </p>
 
-# Objetivo <a id="objetivo"></a>
 <img id="objetivo" src="img/imagens-palestra/9.png" style="height:300px, ">
 
 # Sobre Arduino <a id="sobre-arduino"></a>
