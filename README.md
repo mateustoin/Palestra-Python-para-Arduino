@@ -9,6 +9,8 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
 1. [Introdução](#introd)
     - [Expectativas](#expectativa)
     - [Expectativas](#realidade)
+    - [Porquê python?](#porque-python)
+        - [Facilidades do Python](#facilidade-python1)
 2. [Objetivo](#objetivo)
 3. [O que preciso saber sobre Arduino para conectar no Python?](#sobre-arduino)
 4. [O que preciso saber sobre Python para conectar no Arduino?](#sobre-python)
@@ -32,23 +34,108 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
 
 > ## Contato
 > - Email: mateus.antonio@eng.ci.ufpb.br
-> - Instagram: @matteus_antonio
+> - Instagram: <a href="instagram.com/matteus_antonio">@matteus_antonio</a>
 
 <img id="introd" src="img/imagens-palestra/4.png" style="height:300px, ">
 
-<p>Esse documento é baseado em uma palestra que foi realizada pela primeira vez no evento online <b>RAS WEEK</b>, com foco em temas de robótica, saúde e tecnologia no geral. Nele serão apresentados duas tecnologias bastante utilizadas no ambiente educacional: Arduino e Python. O Arduino é uma plataforma de criação de protótipos bastante conhecida, utilizada com sensores e atuadores para realizar projetos com potencial para virarem produto no mercado. Comumente utilizado para validação de ideias, é aplicado em projetos de pesquisa, extensão, pesquisas e principalmente para ensino de robótica e automação nas escolas e universidades.</p>
+<p>
+    Esse documento é baseado em uma palestra que foi realizada pela primeira vez no evento online <b>RAS WEEK</b>, com foco em temas de robótica, saúde e tecnologia no geral. Nele serão apresentados duas tecnologias bastante utilizadas no ambiente educacional: Arduino e Python. O Arduino é uma plataforma de criação de protótipos bastante conhecida, utilizada com sensores e atuadores para realizar projetos com potencial para virarem produto no mercado. Comumente utilizado para validação de ideias, é aplicado em projetos de pesquisa, extensão, pesquisas e principalmente para ensino de robótica e automação nas escolas e universidades.
+</p>
 
-<p>Já o python é uma linguagem de programação considerada ideal para interessados por programação, em qualquer área de atuação ou idade, pois é simples e versátil. Não é necessário muito tempo para aprender o básico e possui diversas bibliotecas que fazem bastante trabalho por você, por isso se torna uma ferramenta poderosa e mostraremos como isso pode ser utilizado a nosso favor para a criação dos projetos com Arduino</p>
+<p>
+    Já o python é uma linguagem de programação considerada ideal para interessados por programação, em qualquer área de atuação ou idade, pois é simples e versátil. Não é necessário muito tempo para aprender o básico e possui diversas bibliotecas que fazem bastante trabalho por você, por isso se torna uma ferramenta poderosa e mostraremos como isso pode ser utilizado a nosso favor para a criação dos projetos com Arduino.
+</p>
 
 <img id="expectativa" src="img/imagens-palestra/5.png" style="height:300px, ">
-
-
+<p>
+    Muitos imaginam que já vão começar aprendendo desenvolvimento avançado, realizar funções complexas e desenvolver sistemas robustos, como um Jarvis da vida. Pra chegar nesse nível precisamos entender diversas coisas, o início do conhecimento, para que seja construída uma base sólida e só depois construir aplicações cada vez mais legais e cheias de funcionalidades.
+</p> 
 
 <img id="realidade" src="img/imagens-palestra/6.png" style="height:300px, ">
 
-<p>Sem querer criar muitas expectativas, essa apresentação não vai preparar ninguém pra fazer o próximo homem de ferro. A abordagem aqui será um pouco superficial, mas será o suficiente pra despertar muita curiosidade.</p>
+<p>
+    Sem querer criar muitas expectativas, essa apresentação não vai preparar ninguém pra fazer o próximo homem de ferro. A abordagem aqui será um pouco superficial, mas será o suficiente pra despertar muita curiosidade. Veremos algumas implementações e aplicações que podem ser um ponta pé inicial para esse projeto (Jarvis)!
+</p>
+
+## Porquê Python? <a id="porque-python"></a>
+
+<img id="facilidade-python1" src="img/imagens-palestra/7.png" style="height:300px, ">
+<p>
+    A facilidade para se aprender python é um fator muito importante para a escolha da linguagem, mas acima de tudo, a acessibilidade de informações e quantidade de materiais é indispensável. Hoje é possível encontrar ótimos cursos de python, do básico ao avançado, em algumas plataformas como o <i>Coursera</i>, <i>Youtube</i>, <i>Udemy</i>, entre muitos outros.
+</p>
+
+<p>
+    Na figura acima podemos observar o curso de Python do renomado Gustavo Guanabara, que foi criado com o objetivo de iniciar as pessoas na programação a partir do 0. Além disso temos algumas opções na plataforma da Udemy, que se filtrar por cursos de python grátis, gera mais de 100 resultados. Ou seja, opções não faltam, basta procurar e começar!
+</p>
+
+<img id="facilidade-python2" src="img/imagens-palestra/8.png" style="height:300px, ">
+
+<p>
+    Para mostrar um exemplo prático, o código em python exibido acima é responsável por controlar um Dron! Alguns drones no mercado funcionam com aplicativos de celular ou controles mais simples, pois são de baixo custo e feito para iniciantes. Em alguns casos, como o dro drone mostrado (DJI Tello), a empresa disponibiliza um <i>SDK</i> (Software Development Kit, do inglês Kit de Desenvolvimento de Software). Com esse SDK podemos utilizar uma linguagem de programação para desenvolver o nosso próprio sistema de controle do dispositivo, nesse caso, o drone. 
+</p>
+
+```python
+1: from djitellopy import Tello
+```
+<p>
+    Na primeira linha do código podemos observar a importação da biblioteca Tello, responsável por controlar o drone. Nela contém o SDK, mencionado anteriormente, que possui tudo que é necessário para acionar as funcionalidades do quadricoptero.
+</p>
+
+```python
+2: tello = Tello()
+```
+<p>
+    Na segunda linha do código criamos uma variável que "armazenará" todas as funções que utilizaremos. Isso é comum e ocorre com a maioria das bibliotecas que utilizamos para fazer coisas no python. Com isso o <i>tello</i> ficará responsável por chamar o que chamamos de métodos (funções dentro da biblioteca que adiconamos).
+</p>
+
+```python
+3: tello.connect()
+```
+<p>
+    Na linha 3 o primeiro método é chamado, para conectar o computador que está executando o código ao drone. Depois que a conexão é estabelecida, já é possível enviar comandos, pois o drone irá "escutar".
+</p>
+
+```python
+4: tello.takeoff()
+```
+<p>
+    Depois de conectado, o primeiro comando é enviado, para levantar voo.
+</p>
+
+```python
+5: tello.move_left(100)
+```
+<p>
+    Depois de ter o voo levantado, agora o drone é movido 100 centímetros para a esquerda.
+</p>
+
+```python
+6: tello.rotate_counter_clockwise(45)
+```
+<p>
+    Depois de mover os 100 centímetros, ele gira no sentido anti-horário 45°.
+</p>
+
+```python
+7: tello.land()
+```
+<p>
+    Depois de ter finalizado o giro, pousa no chão.
+</p>
+
+```python
+8: tello.end()
+```
+<p>
+    Depois de ter pousado, encerra a conexão do programa com o drone.
+</p>
+
+<p>
+    Os códigos foram exibidos e explicados para mostrar como é simples a cadeia de comandos que você pode fazer no python para realizar uma tarefa. Se com drones é possível ter um controle tão simples, quem dirá funcionalidades que podemos implementar no python, como reconhecimento de voz, entre outros. Como dito anteriormente, algumas coisas são mais simples do que parece e é isso que iremos explorar!
+</p>
 
 # Objetivo <a id="objetivo"></a>
+<img id="objetivo" src="img/imagens-palestra/9.png" style="height:300px, ">
 
 # Sobre Arduino <a id="sobre-arduino"></a>
 
