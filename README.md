@@ -223,6 +223,12 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
     No lado direito é possível ver um teste, utilizando o <b>Monitor Serial</b> da própria IDE do Arduino. Nele é possível testar, enviando e recebendo as mensagens, representando o que seria o código em Python. <b>Este mesmo código será utilizado para alguns exemplos que serão expostos mais na frente.</b>
 </p>
 
+<b>
+<a href='https://www.arduino.cc/reference/pt/language/functions/communication/serial/'> Link para a documentação do Serial Arduino</a>
+</b>
+<br/>
+<br/>
+
 <img src="img/imagens-palestra/18.png" style="height:300px, ">
 
 <p>
@@ -240,6 +246,12 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
 <p>
     Nos dois exemplos mostrados acima podem ser visto as duas formas de se comunicar, tanto <b>realizando leituras</b> quanto <b>realizando escritas</b> na <b>Interface Serial</b>. Nesse caso, com o código de Arduino mostrado acima, é possível testar todas as funcionalidades e transmitir mensagem, realizando a comunicação entre o Python e o Arduino.
 </p>
+
+<b>
+<a href='https://pythonhosted.org/pyserial/index.html'> Link para a documentação do Serial Python</a>
+</b>
+<br/>
+<br/>
 
 <img id="aplicacao" src="img/imagens-palestra/21.png" style="height:300px, ">
 
