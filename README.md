@@ -208,6 +208,38 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
     Um último detalhe necessário para entender a comunicação serial seria o <b>Baudrate</b>. A seguir veremos como o Baudrate é programado, mas é importante saber que o valor de Baud determinado no Arduino deve ser exatamente igual ao indicado na linguagem de programação. Isso se deve ao fato desse valor determinar a velocidade em que as duas partes irão transferir bits de uma para a outra. Com o mesmo valor, elas conseguem sincronizar esses dados e tanto transmitir como receber da maneira correta. Esse valor está diretamente relacionado a <b>quantidade de bits por segundo</b> em que a comunicação ocorre. 
 </p>
 
+## Imagem: Código da comunicação serial
+
+<p>
+    Nesse código de exemplo podemos ver que o <code>Serial.begin(9600)</code> indica a inicialização da comunicação Serial por parte do Arduino. Nela também é possível notar o valor 9600, que indica a velocidade da comunicação. Depois, no loop(), é possível notar que o Arduino fica esperando receber alguma mensagem externa. Quando a mensagem externa é <code>a</code>, ele aciona o led e envia uma mensagem pela Serial dizendo <code>Acionou led!</code>. Se a mensagem externa for <code>b</code>, desliga o led e envia pela porta Serial a mensagem <code>Desligou led!</code>. 
+</p>
+
+<p>
+    Essa mensagem externa que foi mencionada é a mensagem que virá do código em Python, que iremos explorar mais na frente. Nota-se que o Arduino utiliza a função <code>Serial.available()</code> para verificar se há uma mensagem externa, <code>Serial.read()</code> para receber e armazenar essa mensagem externa, depois que foi identificada, e por fim, <code>Serial.println()</code> para enviar uma mensagem de volta, para que o código em Python receba e tenha um feedback de que tudo ocorreu certo. Essa prática é bastante comum, verificar, receber, enviar feedback. Para todo sistema complexo, é necessário que sempre exista uma forma de verificar se tudo está acontecendo normalmente, para que, caso algum problema ocorra, isso possa ser solucionado.
+</p>
+
+<p>
+    No lado direito é possível ver um teste, utilizando o <b>Monitor Serial</b> da própria IDE do Arduino. Nele é possível testar, enviando e recebendo as mensagens, representando o que seria o código em Python. <b>Este mesmo código será utilizado para alguns exemplos que serão expostos mais na frente.</b>
+</p>
+
+## Imagem: Imagine as possibilidades
+
+<p>
+    Algumas dicas para aplicar o que já foi mencionado anteriormente, <b>em relação aos contests de projetos</b>. Essas são algumas plataformas que realizam essas atividades durante todo o ano, com desafios como "Faça um projeto que encaixe no bolso de uma calça" ou "Faça um projeto que utilize material reciclado", entre muitos outros. Esses desafios, unidos com a criatividade de cada um, unindo todas as ferramentas possíveis, podem gerar bons resultados e premiações legais. Além disso, essas <b>Plataformas</b> possuem milhares de projetos e ideias para alimentar a sua própria criatividade. 
+</p>
+
 # Sobre Python <a id="sobre-python"></a>
 
+<p>
+    Como o Arduino, o <b>Python</b> também possui sua própria forma de se comunicar pela interface Serial. Todos os exemplos foram testados utilizando <b>versões do Python superiores a 3.7+</b>. A biblioteca é importada com o comando <code>import serial</code>, como pode ser visto a seguir.
+</p>
+
+## Imagem: Comunicação Serial
+
+<p>
+    Nos dois exemplos mostrados acima podem ser visto as duas formas de se comunicar, tanto <b>realizando leituras</b> quanto <b>realizando escritas</b> na <b>Interface Serial</b>. Nesse caso, com o código de Arduino mostrado acima, é possível testar todas as funcionalidades e transmitir mensagem, realizando a comunicação entre o Python e o Arduino.
+</p>
+
 # Códigos, Aplicações e Utilitários <a id="aplicacao"></a>
+
+# Imagem: Contato
