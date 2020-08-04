@@ -15,6 +15,7 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
 3. [O que preciso saber sobre Arduino para conectar no Python?](#sobre-arduino)
 4. [O que preciso saber sobre Python para conectar no Arduino?](#sobre-python)
 5. [Códigos, Aplicações e Utilitários](#aplicacao)
+6. [Contato](#contato)
 
 <a href="https://www.instagram.com/matteus_antonio/">
     <img id="whoami" src="img/imagens-palestra/2.png" style="height:300px, ">
@@ -140,11 +141,11 @@ A ideia da apresentação é mostrar como é possível integrar Arduino e Python
     Como mencionado anteriormente, o objetivo é que com os códigos que serão mostrados e o exemplos fornecidos, <b>você seja capaz de desenvolver muito mais projetos</b> a partir dali, com diversas funcionalidades. 
 </p>
 
-<img id="objetivo" src="img/imagens-palestra/11.png" style="height:300px, ">
+<img id="batman" src="img/imagens-palestra/11.png" style="height:300px, ">
 
 Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com diversas ferramentas para resolver os problemas mais variados! Ter conhecimento acerca dessas tecnologias significa que para cada problema que surgir, mais soluções poderão ser pensadas para resolvê-lo. Além disso, a própria prática com essas tecnologias auxilia no aprendizado delas individualmente, como <b>melhorar programando</b>, <b>utilizando algoritmos</b>, <b>estruturas de dados</b> e <b>ferramentas do mercado</b>, como criando protótipos para projetos cada vez mais complexos e aprendendo sobre eletrônica e hardware no processo.
 
-<img id="objetivo" src="img/imagens-palestra/10.png" style="height:300px, ">
+<img id="utilidades" src="img/imagens-palestra/10.png" style="height:300px, ">
 
 <p>
     No final das contas, depois que passar por todo esse processo, todo esse conhecimento será útil para diversas coisas! <b>Hackathons</b> acontecem em todo o País o tempo todo, em eventos e plataformas online, com diversos problemas esperando as soluções mais criativas. <b>Contests</b> também ocorrem com frequências, mais focado em desafios para não só resolução de problemas, mas também criação de coisas dentro de regras que podem variar bastante de acordo com o tema. Ambos tem premiações que podem chegar a ser bem legais. 
@@ -158,25 +159,25 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
     Com <b>projetos pessoais</b> não é muito diferente, mas o mais legal é poder criar, modificar e ser o mais versátil possível, tendo a própria criatividade como o único limite imposto. A quantidade de aprendizado acerca de diversos temas é inifinito, pois cada coisa aprendida leva a uma combinação de projetos e ideias que seria impossível realizar todos. Isso desperta não só um crescimento pessoal mas também pode levar a outros campos, como o Ensino, <b>quando há uma vontade e paixão por aquilo</b>, não só de desenvolver, mas de fazer com que outras pessoas também enxerguem esse potencial.
 </p>
 
-# Sobre Arduino <a id="sobre-arduino"></a>
+<img id="sobre-arduino" src="img/imagens-palestra/12.png" style="height:300px, ">
 
 <p>
     Nesta seção será mostrada os principais pontos relacionados ao Arduino que precisamos saber para realizar a comunicação entre ele e a linguagem de programação Python. Além disso, <b>o que daria pra fazer com essa integração?</b> Porque seria tão útil aprendê-la, além dos pontos que já foram levantados? Veremos uma visão mais técnica da coisa.
 </p>
 
-## Imagem: Não Apenas Arduino...
+<img src="img/imagens-palestra/13.png" style="height:300px, ">
 
 <p>
     É válido dizer que as dicas e informações passadas aqui não valem apenas para Arduino, mas também com ESP8266 e outros tipos de placas de desenvolvimento. Como vai ser mostrado a frente, <b>essas placas tem algo em comum: a forma em que se comunicam com o computador</b>.
 </p>
 
-## Imagem: Vários tipos de Arduino
+<img src="img/imagens-palestra/14.png" style="height:300px, ">
 
 <p>
     Então dá pra desfrutar de diversas funcionalidades através dos diversos tipos de placas. O <b>Arduino tem inúmeras versões</b>, cada uma com sua particularidade, e é possível desfrutar de cada uma dessas particularidades para a criação dos projetos com Python.
 </p>
 
-## Imagem: O que dá pra fazer?
+<img src="img/imagens-palestra/15.png" style="height:300px, ">
 
 <p>
     Mas afinal de contas, o que dá pra fazer com isso que vamos aprender? Só dizer que a quantidade de possibilidades é vasta não adianta, é preciso falar quais são. Como já é conhecido, um dos maiores motivos do Arduino ser a placa de desenvolvimento mais famosa é a quantidade de <b>sensores e atuadores</b> que podem ser utilizados com ele, a fim de coletar dados e realizar funções. Se o Arduino por si só já consegue realizar inúmeras tarefas com seus próprios sensores e atuadoras, imagine com a utilização de funções do Python, conexão com a internet, uso de bibliotecas próprias do python para auxiliar nas tomadas de decisão. Com a facilidade das <b>bibliotecas</b> do Python e comunicação com o Arduino, seria possível desfrutar da internet, armazenar os dados do Arduino em diversos tipos de banco de dados, seja local ou na nuvem, utilizando serviços famosos como o <b>Firebase</b> do Google ou <b>Amazon Web Services</b> da Amazon. Também seria possível realizar diversas dessas funções com Arduino ou ESP8266, você deve estar se perguntando qual seria a real utilidade. Então imagine um <b>cenário escasso</b>, onde você não tem acesso aos sensores e atuadores certos para realizar essas funcionalidades, onde as bibliotecas podem ser complicadas e o acesso a informação prejudicado. Aí entra o Python, para suprir necessidades e deficiência nesses pontos, entre muitos outros. 
@@ -186,7 +187,7 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
     A quantidade de possíveis integrações vão além das mencionadas anteriormente. Como já foi dito, tudo depende da criatividade, pois a própria linguagem oferece inúmeras bibliotecas capazes de realizar milhares de funções. Nada impede de utilizar IA, Reconhecimento de Face, Processamento Digital de Imagens, entre muitas outras coisas, para acionar atuadores e realizar funções para o Arduino. Todas essas funcionalidades estão longe da realidade de algo que poderia ser processado diretamente de um Arduino.
 </p>
 
-## Imagem: Comunicação Serial
+<img src="img/imagens-palestra/16.png" style="height:300px, ">
 
 <p>
     A comunicação do Arduino com o Python se dá através da <b>Comunicação Serial</b>. A Comunicação Serial nada mais é do que a comunicação entre o Arduino e o computador em que ele está conectado, através do <b>Cabo USB</b>. Quando o computador envia informações para compilar um código no Arduino, quando você utiliza o <b>Monitor Serial</b>, entre outros, você está utilizando a interface Serial para realizar essas comunicações.
@@ -208,7 +209,7 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
     Um último detalhe necessário para entender a comunicação serial seria o <b>Baudrate</b>. A seguir veremos como o Baudrate é programado, mas é importante saber que o valor de Baud determinado no Arduino deve ser exatamente igual ao indicado na linguagem de programação. Isso se deve ao fato desse valor determinar a velocidade em que as duas partes irão transferir bits de uma para a outra. Com o mesmo valor, elas conseguem sincronizar esses dados e tanto transmitir como receber da maneira correta. Esse valor está diretamente relacionado a <b>quantidade de bits por segundo</b> em que a comunicação ocorre. 
 </p>
 
-## Imagem: Código da comunicação serial
+<img src="img/imagens-palestra/17.png" style="height:300px, ">
 
 <p>
     Nesse código de exemplo podemos ver que o <code>Serial.begin(9600)</code> indica a inicialização da comunicação Serial por parte do Arduino. Nela também é possível notar o valor 9600, que indica a velocidade da comunicação. Depois, no loop(), é possível notar que o Arduino fica esperando receber alguma mensagem externa. Quando a mensagem externa é <code>a</code>, ele aciona o led e envia uma mensagem pela Serial dizendo <code>Acionou led!</code>. Se a mensagem externa for <code>b</code>, desliga o led e envia pela porta Serial a mensagem <code>Desligou led!</code>. 
@@ -222,24 +223,24 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
     No lado direito é possível ver um teste, utilizando o <b>Monitor Serial</b> da própria IDE do Arduino. Nele é possível testar, enviando e recebendo as mensagens, representando o que seria o código em Python. <b>Este mesmo código será utilizado para alguns exemplos que serão expostos mais na frente.</b>
 </p>
 
-## Imagem: Imagine as possibilidades
+<img src="img/imagens-palestra/18.png" style="height:300px, ">
 
 <p>
     Algumas dicas para aplicar o que já foi mencionado anteriormente, <b>em relação aos contests de projetos</b>. Essas são algumas plataformas que realizam essas atividades durante todo o ano, com desafios como "Faça um projeto que encaixe no bolso de uma calça" ou "Faça um projeto que utilize material reciclado", entre muitos outros. Esses desafios, unidos com a criatividade de cada um, unindo todas as ferramentas possíveis, podem gerar bons resultados e premiações legais. Além disso, essas <b>Plataformas</b> possuem milhares de projetos e ideias para alimentar a sua própria criatividade. 
 </p>
 
-# Sobre Python <a id="sobre-python"></a>
+<img id="sobre-python" src="img/imagens-palestra/19.png" style="height:300px, ">
 
 <p>
     Como o Arduino, o <b>Python</b> também possui sua própria forma de se comunicar pela interface Serial. Todos os exemplos foram testados utilizando <b>versões do Python superiores a 3.7+</b>. A biblioteca é importada com o comando <code>import serial</code>, como pode ser visto a seguir.
 </p>
 
-## Imagem: Comunicação Serial
+<img src="img/imagens-palestra/20.png" style="height:300px, ">
 
 <p>
     Nos dois exemplos mostrados acima podem ser visto as duas formas de se comunicar, tanto <b>realizando leituras</b> quanto <b>realizando escritas</b> na <b>Interface Serial</b>. Nesse caso, com o código de Arduino mostrado acima, é possível testar todas as funcionalidades e transmitir mensagem, realizando a comunicação entre o Python e o Arduino.
 </p>
 
-# Códigos, Aplicações e Utilitários <a id="aplicacao"></a>
+<img id="aplicacao" src="img/imagens-palestra/21.png" style="height:300px, ">
 
-# Imagem: Contato
+<img id="contato" src="img/imagens-palestra/22.png" style="height:300px, ">
