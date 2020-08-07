@@ -23,4 +23,3 @@ def ouvir_microfone():
 
 frase = ouvir_microfone()
 print('Resposta: ' + frase)
-

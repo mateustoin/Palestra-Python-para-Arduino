@@ -1,7 +1,6 @@
-import numpy as np
-import cv2
+import cv2                    # Importa biblioteca do opencv
 
-cap = cv2.VideoCapture(0) # video capture source camera (Here webcam of laptop) 
-ret,frame = cap.read()    # return a single frame in variable `frame`
+cap = cv2.VideoCapture(1)     # Identifica a câmera do dispositivo 
+ret,frame = cap.read()        # Retorna um único frame capturado da câmera
 
-cv2.imwrite('c1.png',frame)
+cv2.imwrite('test.png',frame) # Salva o frame capturado no arquivo test.png
