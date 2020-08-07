@@ -255,4 +255,24 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
 
 <img id="aplicacao" src="img/imagens-palestra/21.png" style="height:300px, ">
 
+## Imagem: Aplicação Arduino + Python
+
+`pip install pyserial`
+
+```python
+1: import serial
+
+2: arduino = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=1)
+
+3: while True:
+4:     msg = input('Envie um comando: ')
+
+5:     arduino.write(bytes(msg, encoding='utf-8'))
+
+6:     retorno = arduino.readline().decode('ascii')
+7:     print('Retorno: ' + retorno)
+```
+
+## Imagem: Speech to Text
+
 <img id="contato" src="img/imagens-palestra/22.png" style="height:300px, ">
