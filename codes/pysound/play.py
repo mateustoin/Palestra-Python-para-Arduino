@@ -1,9 +1,12 @@
 import pygame
+import time
 
-#file = 'aimless-old habits.mp3'
-file = 'Akryl-Gradient.mp3'
+file = 'aimless-old habits.mp3'
 pygame.init()
-#pygame.mixer.init()
+pygame.mixer.init()
 pygame.mixer.music.load(file)
 pygame.mixer.music.play()
-pygame.event.wait()
+
+time.sleep(10)
+
+pygame.mixer.music.stop()

@@ -316,4 +316,23 @@ ret,frame = cap.read()        # Retorna um único frame capturado da câmera
 cv2.imwrite('test.png',frame) # Salva o frame capturado no arquivo test.png
 ```
 
+## Imagem: Acionando sons
+
+`pip install pygame`
+
+```python
+import pygame
+import time
+
+file = 'aimless-old habits.mp3'
+pygame.init()
+pygame.mixer.init()
+pygame.mixer.music.load(file)
+pygame.mixer.music.play()
+
+time.sleep(10)
+
+pygame.mixer.music.stop()
+```
+
 <img id="contato" src="img/imagens-palestra/22.png" style="height:300px, ">
