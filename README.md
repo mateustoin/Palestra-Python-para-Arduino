@@ -257,6 +257,12 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
 
 ## Imagem: Aplicação Arduino + Python
 
+<p align="center">
+<a href="https://github.com/mateustoin">
+  <img height="180em" src="img/imagens-palestra/22.png" />
+</a>
+</p>
+
 `pip install pyserial`
 
 ```python
