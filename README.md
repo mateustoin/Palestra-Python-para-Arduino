@@ -260,17 +260,17 @@ Com isso, <b>seu leque de opções</b> vira o verdadeiro cinto do Batman, com di
 `pip install pyserial`
 
 ```python
-1: import serial
+import serial
 
-2: arduino = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=1)
+arduino = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=1)
 
-3: while True:
-4:     msg = input('Envie um comando: ')
+while True:
+    msg = input('Envie um comando: ')
 
-5:     arduino.write(bytes(msg, encoding='utf-8'))
+    arduino.write(bytes(msg, encoding='utf-8'))
 
-6:     retorno = arduino.readline().decode('ascii')
-7:     print('Retorno: ' + retorno)
+    retorno = arduino.readline().decode('ascii')
+    print('Retorno: ' + retorno)
 ```
 
 ## Imagem: Speech to Text : Comandos por voz
