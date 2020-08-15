@@ -4,7 +4,15 @@
 </a>
 </p>
 
+## Configuração
+
+<p>
+  Para o funcionamento dos códigos de comunicação serial no python, a instalação do pacote a seguir é necessária. Basta digitar no terminal com <i>python</i> e <i>pip</i> instalados:
+</p>
+
 `pip install opencv-python`
+
+## Prática
 
 ```python
 import cv2                    # Importa biblioteca do opencv

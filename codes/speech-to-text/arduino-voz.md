@@ -4,6 +4,14 @@
 </a>
 </p>
 
+## Configuração
+
+<p>
+  Para o funcionamento dos códigos de comunicação serial no python, a instalação do pacote de <i>Speech Recognition</i> é necessária. Basta <a href="https://medium.com/@mateustoin/como-instalar-speech-recognition-no-python-89862f411f2e"> acessar este link</a> e seguir as instruções.
+</p>
+
+## Prática
+
 ```python
 import speech_recognition as sr
 
